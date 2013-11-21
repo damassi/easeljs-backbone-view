@@ -11,21 +11,6 @@ var View = Backbone.View.extend({
 
 
   /**
-   * A ref to the primary AppController, passed in during view
-   * initialization
-   * @type {AppController}
-   */
-  appController: null,
-
-
-  /**
-   * A ref to the primary AppModel
-   * @type {AppModel}
-   */
-  appModel: null,
-
-
-  /**
    * A ref to the primary stage located on AppController
    * @type {c.Stage}
    */
