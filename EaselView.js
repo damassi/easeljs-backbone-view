@@ -107,11 +107,12 @@ var EaselView = Backbone.View.extend({
       if (typeof self.canvasEvents !== 'undefined') {
         for (event in self.canvasEvents) {
           var evtName = event.split(' ')
-            , displayObject = evtName.shift()
+            , objName = evtName.shift()
             , handler = self.canvasEvents[event]
+            , displayObject = self[objName]
 
-          if (self[displayObject]) {
-            self[displayObject].on(evtName, self[handler])
+          if (displayObject) {
+            displayObject.on(evtName, self[handler])
           }
         }
       }
