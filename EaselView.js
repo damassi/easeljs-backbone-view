@@ -35,10 +35,7 @@ var EaselView = Backbone.View.extend({
     _.extend( this, options || {} )
     _.bindAll( this )
 
-    if (this.stage) {
-      this.stage = this.stage
-      this.container = new c.Container()
-    }
+    this.container = new c.Container()
   },
 
 
