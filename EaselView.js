@@ -1,6 +1,5 @@
 /**
- * Easel js view which builds standard backbone functionality in order to provide
- * canvas functionality
+ * Extended Backbone.js view to be used as an EaselJS view superclass
  *
  * @author damassi.pappas@popagency.com
  * @since  11.17.13
