@@ -104,7 +104,7 @@ var EaselView = Backbone.View.extend({
     var self = this
 
     _.defer(function() {
-      if (!_.isUndefined( self.canvasEvents )) {
+      if (typeof self.canvasEvents !== 'undefined') {
         for (event in self.canvasEvents) {
           var evtName = event.split(' ')
             , displayObject = evtName.shift()
