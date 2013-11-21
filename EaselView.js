@@ -6,7 +6,7 @@
  */
 
 
-var View = Backbone.View.extend({
+var EaselView = Backbone.View.extend({
 
 
   /**
@@ -123,5 +123,5 @@ var View = Backbone.View.extend({
 
 })
 
-module.exports = View
+module.exports = EaselView
 
