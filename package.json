@@ -1,0 +1,36 @@
+{
+  "name": "ranker",
+  "version": "0.0.1",
+  "description": "A command-line application that calculates the ranking table for a soccer league",
+  "main": "GruntFile.js",
+  "scripts": {
+    "start": "coffee bin/ranker"
+  },
+  "dependencies": {
+    "grunt": "~0.4.0"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "coffee-script": "~1.6.3",
+    "chai": "~1.7.2",
+    "grunt-simple-mocha": "~0.4.0",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.2",
+    "underscore": "~1.5.1",
+    "backbone": "~1.0.0",
+    "node-terminal": "~0.1.1",
+    "prompt": "~0.2.11",
+    "colors": "~0.6.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/substantial-jobs/damassi"
+  },
+  "contributors": [
+    {
+      "name": "Christopher Pappas",
+      "email": "damassi.pappas@gmail.com"
+    }
+  ],
+  "readmeFilename": "README.md"
+}
