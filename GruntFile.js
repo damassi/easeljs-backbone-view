@@ -4,8 +4,8 @@
  * @author  Christopher Pappas
  * @date    8.21.13
  *
- * Primary Tasks: 
- *   tests  :  Execute mocha tests
+ * Primary Tasks:
+ *   test  :  Execute mocha tests
  *   dev    :  Development mode, file-watcher
  */
 
@@ -26,8 +26,8 @@ module.exports = function( grunt ) {
         bail: true
   		},
 
-		  all: { 
-        src: ['test/ranker_spec.coffee'] 
+		  all: {
+        src: ['test/ranker_spec.coffee']
       }
 		},
 
@@ -45,13 +45,13 @@ module.exports = function( grunt ) {
   // + ---------------------------------------
 
 
-  grunt.registerTask( 'dev', [ 
-    'tests',
+  grunt.registerTask( 'dev', [
+    'test',
     'watch'
   ])
-  
-  grunt.registerTask( 'tests', [ 
-    'simplemocha' 
+
+  grunt.registerTask( 'test', [
+    'simplemocha'
   ])
 
 
@@ -59,9 +59,9 @@ module.exports = function( grunt ) {
 
 
   grunt.loadNpmTasks( 'grunt-contrib-watch' )
-  grunt.loadNpmTasks( 'grunt-simple-mocha' )  
+  grunt.loadNpmTasks( 'grunt-simple-mocha' )
 
-  
+
   // + ---------------------------------------
 
 
